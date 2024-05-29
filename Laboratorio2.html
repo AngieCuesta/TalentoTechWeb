@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+        <br>
+        <h1>¡Bienvenidos a Popsy!</h1>
+    <div>
+        <img src="https://paseosanrafael.com/wp-content/uploads/2013/06/Popsy-01.jpg" alt="Logo popsy" width="400" 
+        style="border-radius: 100px;
+        border-color: black;
+        border-style: solid;
+        margin-left: auto;
+        margin-right: auto;
+        display: block">
+        <h1>Popsy Helado Gourmet</h1>
+        <p>Una marca orgullosamente colombiana, dedicada a la creación de momentos felices, que entrega inmejorables experiencias de helados, malteadas y postres. </p>
+    </div>
+    <div>
+        <h2>Servicios</h2>
+        <ul>
+            <li>Productos</li>
+            <li>Nuestras tiendas</li>
+            <li>Trabaja con nosotros</li>
+        </ul>
+        
+            <img class="imagen2" src="https://www.domiciliospopsy.com/images/login_register.jpg">
+           
+    </div>
+    <div>
+        <h2>Contacto:</h2>
+        <ul>
+            <li>(+57) 32142173083</li>
+            <li>@heladospopsycol</li>
+            <li>Dg. 20a #22-52, ZONA 5,Bogotá, Colombia - Código Postal 111711</li>
+        </ul>
+    </div>
+    <div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/iMdukisdc3o?si=P4H30FjE7ahJ16TC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div>
+    <br>
+        <a href="https://heladospopsy.com/"class="enlace" target="_blank">Ir a la página Oficial</a>
+    </div>
+    <!-- Formulario -->
+    <hr>
+    <h1>Formulario de Contacto</h1>
+    <form action="">
+    <form method="POST">
+        <!-- Campo de texto -->
+        <label for="">Nombre</label>
+        <input type="text" placeholder="Escriba el nombre" required name="nombre"> 
+        <!-- Salto de linea -->
+        <br>
+        <!-- Campo Fecha -->
+        <label for="">Fecha de nacimiento</label>
+        <input type="date" required max="2024-05-02" min="1900-01-01" value="2024-05-02" name="fecha_nacimiento">
+        <br>
+        <!-- Campo Numerico -->
+        <label for="">Cedula</label>
+        <input type="number" required placeholder="digite su cedula" name="cedula">
+        <br>
+        <!-- Selector -->
+        <label for="">Escoja una ciudad</label>
+        <select name="ciudad" id="" required>
+            <option value="">-</option>
+            <option value="Manizales">Manizales</option>
+            <option value="Bogota">Bogota</option>
+            <option value="Medellin">Medellin</option>
+            <option value="Cartagena">Cartagena</option>
+            <option value="Cali">Cali</option>
+        </select> <br>
+        <!-- Fieldset -->
+        <fieldset>
+            <legend>Informacion de contacto</legend>
+            <!-- Text Area -->
+            <label for="">Dirección</label>
+            <textarea id="" cols="50" rows="1" name="dirección"></textarea> <br>
+            <label for="">Teléfono</label>
+            <input type="number" required placeholder="Digite su teléfono"  name="Teléfono"></textarea> <br>
+            <label for="">Correo electronico</label>
+            <input type="email" required placeholder="Ingresar Email" name="email"> <br>
+        </fieldset>
+        <hr> 
+        <!-- Campo Archivo -->
+        <label for="">Subir documento PQR</label>
+        <input type="file" required placeholder="Subir Archivos" accept="image/*" name="cv"> <br>
+        <!-- Campo Radio -->
+        <label for="">Tipo de PQR</label>
+        <input type="radio" name="PQR" value="P" required> 
+        <label for="">Petición</label>
+        <input type="radio" name="PQR" value="Q" required>
+        <label for="">Queja</label>
+        <input type="radio" name="PQR" value="R" required>
+        <label for="">Reclamo</label> 
+        <br>
+        <hr>
+        <!-- Button -->
+        <button>Enviar</button>
+    </form>
+    <hr>
+
+    <table style="background-color:deeppink;">
+        <h1>Tabla de Ventas 2023</h1>
+        <table id="estilo-tabla">
+        <!-- Encabezado -->
+        <tr style="background-color:deeppink;"> 
+            <th style= color:white;>Mes</th>
+            <th style= color:white;>Ventas en COP</th>
+            <th style= color:white;>Ganancia</th>
+            <th style= color:white;>Ciudad líder en ventas</th>
+        </tr>
+        <!-- Datos -->
+        <tr>
+            <td style="border:1px solid black">Enero</td>
+            <td>$100.020.500</td>
+            <td>$70.000.000</td>
+            <td>Bogotá</td>
+        </tr>
+        <tr>
+            <td style="border:1px solid black">Febrero</td>
+            <td>$180.010.400</td>
+            <td>$100.000.000</td>
+            <td>Barrranquilla</td>
+        </tr>   
+        <tr>
+            <td style="border:1px solid black">Marzo</td>
+            <td>$130.010.400</td>
+            <td>$100.000.000</td>
+            <td>Cartagena</td>
+        </tr>   
+        <tr>
+            <td style="border:1px solid black">Abril</td>
+            <td>$140.010.400</td>
+            <td>$90.000.000</td>
+            <td>Bogotá</td>
+        </tr>   
+        <tr>
+            <td style="border:1px solid black">Mayo</td>
+            <td>$150.010.400</td>
+            <td>$96.000.000</td>
+            <td>Santa Marta</td>
+        </tr> 
+        <tr>
+            <td style="border:1px solid black">Junio</td>
+            <td>$160.010.400</td>
+            <td>$105.000.000</td>
+            <td>Cali</td>
+        </tr> 
+        <tr>
+            <td style="border:1px solid black">Julio</td>
+            <td>$135.010.400</td>
+            <td>$94.400.000</td>
+            <td>Bogotá</td>
+        </tr> 
+        <tr>
+            <td style="border:1px solid black">Agosto</td>
+            <td>$145.010.400</td>
+            <td>$99.700.000</td>
+            <td>Medellin</td>
+        </tr> 
+        <tr>
+            <td style="border:1px solid black">Septiembre</td>
+            <td>$161.090.400</td>
+            <td>$111.300.000</td>
+            <td>Bogotá</td>
+        </tr> 
+        <tr>
+            <td style="border:1px solid black">Octubre</td>
+            <td>$131.020.500</td>
+            <td>$101.900.000</td>
+            <td>Bogotá</td>
+        </tr> 
+        <tr>
+            <td style="border:1px solid black">Noviembre</td>
+            <td>$142.321.500</td>
+            <td>$121.100.000</td>
+            <td>Bogotá</td>
+        </tr> 
+        <tr>
+            <td style="border:1px solid black">Diciembre</td>
+            <td>$182.678.900</td>
+            <td>$151.200.000</td>
+            <td>Cartagena</td>
+        </tr> 
+    </table>
+</body>
+
+    <hr>
+    <style> 
+    
+/* PseudoClases */
+    .enlace {
+        text-decoration: none;
+        background-color: white;
+        padding: 9px;
+        border-radius: 7px;
+        border-color: deeppink;
+        border-style: solid;
+        display: inline-block;
+        text-align: center;
+        cursor: progress;
+    }
+    .enlace:hover {
+        color: deeppink;
+        background-color: aquamarine;
+    }
+h1 {
+        color: black ;
+        font-size: 30px;
+    font-family: cursive;
+}
+p {
+        color: black ;
+        font-size: 19px;
+    font-family: cursive;
+}
+h2 {
+        color: black ;
+        font-size: 19px;
+    font-family: cursive;
+}
+li {
+    color: black ;
+        font-size: 15px;
+    font-family: cursive;
+}
+label {
+font-family: cursive;
+margin: 5px;
+font-weight: bold;
+}
+legend {
+    font-family: cursive;
+margin: 5px;
+font-weight: bold;
+}
+input, textarea, select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 10px;
+    display: inline-block;
+    border: 1px solid rgb(10, 9, 10);
+    border-radius: 11px;
+    box-sizing: border-box;
+}
+button {
+    border-radius: 5px;
+    background-color: palevioletred;
+    padding: 10px 20px;
+    width: 18%;
+    margin: 8px;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #f80b99;
+}
+
+table#estilo-tabla {
+        border: 1px solid;
+        width: 70%;
+        text-align: center;
+        border-collapse: collapse;
+    }
+    th, td {
+        border: 1px solid;
+        padding: 10px;
+        border-color: #b31d72;
+    }
+
+    table#estilo-tabla tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    table#estilo-tabla tr:hover {
+        background-color: palevioletred;
+        color: aliceblue;
+    }
+
+    table#estilo-tabla th {
+        background-color: deeppink;
+        color: rgb(167, 240, 140);
+    }
+
+    ul {
+        background-color: rgb(247, 187, 230);
+        padding: 20px;
+    }
+    
+    div{
+        background-image: url('https://i.pinimg.com/736x/31/93/09/319309d75a33312d85ad035ab22f2396.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+        opacity: 0.9;
+    }
+    
+
+</style>
+</html>

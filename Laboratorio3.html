@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</body>
+<script>
+ /* Ejercicio 1: Verificar si un número es positivo, negativo o cero
+Escribe un programa que solicite un número al usuario y luego imprima un mensaje indicando si el número es positivo, negativo o cero. 
+var num = parseFloat(prompt("Ingrese un numero"))
+if (num > 0){
+    document.write("el numero es positivo")
+}else if (num < 0){
+    document.write("el número es negativo")
+}else{
+    document.write ("el numero es cero")
+    } */
+
+
+    /*Ejercicio 2: Determinar si un número es par o impar.Escribe un programa que solicite un número al usuario y luego imprima un mensaje indicando si el número es par o impar.
+var num= parseFloat(prompt("Ingrese el número:"))
+if (num%2 == 0){
+    document.write("El número es par")
+}else{
+    document.write ("El número es impar")
+} */
+
+/*Ejercicio 3: Validar la edad para votar
+Escribe un programa que solicite la edad del usuario y luego imprima un mensaje indicando si la persona es mayor de edad (18 años o más) y puede votar.
+var num= parseInt(prompt ("Ingrese su edad"))
+if (num>= 18){
+    document.write ("Es mayor de edad y puede votar")
+}else{
+    document.write ("No es mayor de edad, por tanto, no puede votar")
+}*/
+
+/*Ejercicio 4: Determinar el mayor de dos números
+Escribe un programa que solicite dos números al usuario y luego imprima cuál de ellos es mayor o si son iguales.
+var num1= parseInt(prompt ("Ingrese el primer número"))
+var num2= parseInt(prompt ("Ingrese el segundo número"))
+if (num1 > num2){
+    document.write("El primer número es mayor:" + num1)
+}if (num1 < num2){
+    document.write("El segundo número es mayor:" + num2)
+}
+else{
+    (num1==num2)
+    document.write("Los números son iguales")
+}*/
+
+/*Ejercicio 5: Calcular descuento en una compra
+Escribe un programa que solicite el monto de una compra y luego aplique un descuento del 10% si el monto es mayor a $100.*/
+/*var precio = parseFloat (prompt("Ingresa el monto de la compra"))
+var dcto=10
+var pago = 0
+if (precio>100){
+    pago=precio-precio*0.1
+}else{
+    pago=precio
+}
+document.write("El valor a pagar es" + " " + pago)
+
+/*Ejercicio 6: Convertir un número a un día de la semana [Switch]
+Escribe un programa que solicite un número del 1 al 7 y muestre el día correspondiente de la semana (1 = Lunes, 2 = Martes, etc.).*/
+
+/*var numeroDia = parseInt(prompt("Ingrese el número del día de la semana:"))
+var nombreDia = ""
+if(numeroDia > 0 && numeroDia <= 7)
+switch (numeroDia){
+    case 1:
+        nombreDia = "Lunes"
+        break;
+    case 2:
+        nombreDia = "Martes"
+        break;
+    case 3:
+        nombreDia = "Miercoles"
+        break;
+    case 4:
+        nombreDia = "Jueves"
+        break;
+    case 5:
+        nombreDia = "Viernes"
+        break;
+    case 6:
+        nombreDia = "Sabado"
+        break;
+    case 7:
+        nombreDia = "Domingo"
+        break;
+
+}
+document.write("El mes ingresado es: " + nombreDia)
+
+
+/*Ejercicio 7: Determinar la estación del año según el mes [Swtich]
+Escribe un programa que solicite un número de mes (1-12) y determine la estación del año (primavera, verano, otoño, invierno).*/
+var numeroMes = parseInt(prompt("Ingrese el número del mes:"))
+var nombreMes= ""
+if(numeroMes > 0 && numeroMes <= 12)
+switch(numeroMes){
+    case 1: 
+    nombreMes = "Enero, es invierno"
+    break;
+    case 2:
+    nombreMes = "Febrero, es invierno"
+    break;
+    case 3:
+    nombreMes = "Marzo, es primavera"
+    break;
+    case 4:
+    nombreMes = "Abril, es primavera"
+    break;
+    case 5:
+    nombreMes = "Mayo, es primavera"
+    break;
+    case 6:
+    nombreMes = "Junio, es Verano"
+    break;
+    case 7:
+    nombreMes = "Julio, es Verano"
+    break;
+    case 8:
+    nombreMes = "Agosto, es Verano"
+    break;
+    case 9:
+    nombreMes = "Septiembre, es otoño"
+    break;
+    case 10:
+    nombreMes = "Octubre, es otoño"
+    break;
+    case 11:
+    nombreMes = "Noviembre, es otoño"
+    break;
+    case 12:
+    nombreMes = "Diciembre, es invierno"
+    break;
+}
+document.write("En el mes de " + nombreMes)
+   </script>
+    </html>

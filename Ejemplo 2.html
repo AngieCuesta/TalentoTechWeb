@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Correo</th>
+            <th>Ciudad</th>
+            <th>Edad</th>
+            <th>Profesión</th>
+        </tr>
+        <tr>
+            <td>Angie Cuesta</td>
+            <td>angie@correo.com</td>
+            <td>Bogota</td>
+            <td>28</td>
+            <td>Analista QA</td>
+        </tr>
+        <tr>
+            <td>Mario Sanchez</td>
+            <td>mario@correo.com</td>
+            <td>Manizales</td>
+            <td>31</td>
+            <td>Ingeniero de sistemas</td>
+        </tr>
+        <tr>
+            <td>Camilo Saenz</td>
+            <td>cami@correo.com</td>
+            <td>Bogota</td>
+            <td>24</td>
+            <td>Médico</td>
+        </tr>
+        <tr>
+            <td>Diana Cuesta</td>
+            <td>diana@correo.com</td>
+            <td>Bogota</td>
+            <td>25</td>
+            <td>Abogada</td>
+        </tr>
+        <tr>
+            <td>Yuli Giraldo</td>
+            <td>Yuli@correo.com</td>
+            <td>Medellin</td>
+            <td>40</td>
+            <td>Gerente</td>
+        </tr>
+        <tr>
+            <td>Juan Rivera</td>
+            <td>Juan@correo.com</td>
+            <td>Cancun</td>
+            <td>30</td>
+            <td>Bombero</td>
+        </tr>
+        <tr>
+            <td>Sara Leif</td>
+            <td>Sara@correo.com</td>
+            <td>Bogota</td>
+            <td>19</td>
+            <td>Enfermera</td>
+        </tr>
+        <tr>
+            <td>Luis Diaz</td>
+            <td>Luis@correo.com</td>
+            <td>Cauca</td>
+            <td>22</td>
+            <td>Carpintero</td>
+        </tr>
+        <tr>
+            <td>Camila Rico</td>
+            <td>Cami@correo.com</td>
+            <td>Amazonas</td>
+            <td>25</td>
+            <td>Ingeniera Industrial</td>
+        </tr>
+        <tr>
+            <td>Andrés Olarte</td>
+            <td>Andres@correo.com</td>
+            <td>Bogota</td>
+            <td>31</td>
+            <td>Vendedor</td>
+        </tr>
+    </table>
+    <br>
+<!--Formulario-->
+<form>
+    <label for="">Nombre</label>
+    <!-- Campo de texto-->
+    <input type="text" placeholder="Nombre completo" required name="nombre">
+    <!-- salto de linea -->
+    <br>
+    <!-- Campo de Fecha -->
+    <label for="">Fecha de nacimiento</label>
+    <input type="date" required max="2024-05-02" min="1900-01-01" value="2024-05-02"name="fecha_nacimiento">
+    <br>
+    <!-- Campo Numérico -->
+    <label for="">Ingresos mensuales</label>
+    <input type="number"required placeholder="salario" name="salario">
+    <br>
+    <!-- Campo Email -->
+    <label for="">Correo Electrónico</label>
+    <input type="email" required placeholder="ingresar email" name="email"> <br>
+    <!-- Campo Archivo -->
+    <label for="">Subir CV</label>
+    <input type="file" required placeholder="Subir archivo" accept="image/*" name="CV"><br>
+    <!-- Campo Password -->
+    <label for="">Password</label>
+    <input type="password" required placeholder="Ingrese su contraseña" name="password"> <br>
+    <!-- Campo Hora -->
+    <label for="">Hora de ingreso</label>
+    <input type="Time" required> <br>
+    <!-- Campo Mes -->
+    <label for="">Mes de ingreso</label>
+    <input type="mes" required ="Mes"> <br>
+     <!-- Campo Color -->
+     <label for="">Color del uniforme</label>
+     <input type="color" required> <br>
+    <!-- Campo Radio -->
+    <label for="">Genero</label>
+    <input type="radio" name="genero" value="femenino"required>
+    <label for="">Femenino</label>
+    <input type="radio" name="genero" value="masculino"required>
+    <label for="">Masculino</label> <br>
+    <!-- Campo Checkbox -->
+    <label for="">Días Laborados</label>
+    <input type="checkbox" name="dias" required value="Lunes">
+        <label for="">Lunes</label>
+        <input type="checkbox" name="dias" required value="Martes">
+        <label for="">Martes</label>
+        <input type="checkbox" name="dias" required value="Miercoles">
+        <label for="">Miercoles</label>
+        <input type="checkbox" name="dias" required value="Jueves">
+        <label for="">Jueves</label>
+        <input type="checkbox" name="dias" required value="Viernes">
+        <label for="">Viernes</label> <br>
+        <!-- Campo URL -->
+        <label for="">Link Perfil Linkedin</label>
+        <input type="url" required placeholder="Ingrese Link de su perfil"> <br>
+        <!-- Campo Telefono -->
+        <label for="">Teléfono</label>
+        <input type="tel" required placeholder="Ingrese su teléfono">> <br>
+        <!-- Selector -->
+        <label for="">Escoja una ciudad</label>
+        <select name="" id="">
+            <option value="">-</option>
+            <option value="Manizales">Manizales</option>
+            <option value="Bogota">Bogota</option>
+            <option value="Cali">Cali</option>
+        </select> <br> <br>
+        <!-- Fieldset -->
+        <fieldset>
+            <legend>Información General</legend>
+        <!-- Text Area -->
+        <label for="">Descripción del perfil</label>
+        <textarea name=""id=""></textarea><br>
+        <label for="">Tipo documento</label>
+        <input list="documento" name="documento">
+        <!-- Datalist -->
+        <datalist id="documento">
+        <option value="Cédula"Cédula></option>
+        <option value="Tarjeta de Identidad">Tarjeta de Identidad</option>
+        <option value="Pasaporte">Pasaporte</option>
+        </datalist> <br>
+    <label for="">Cedula</label>
+    <input type="text">
+</fieldset>
+    
+        <!-- Button -->
+        <button>Enviar</button>
+    </form>
+</body>
+</html>
