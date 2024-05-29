@@ -57,7 +57,6 @@
     <hr>
     <h1>Formulario de Contacto</h1>
     <form action="">
-    <form method="POST">
         <!-- Campo de texto -->
         <label for="">Nombre</label>
         <input type="text" placeholder="Escriba el nombre" required name="nombre" id="Nombre"> 
@@ -205,23 +204,23 @@
         console.log(tema)
         if (tema == "light"){
             fondo = "magenta"
-            letra = "black"
+            letra = "white"
         } else if (tema == "dark"){
             fondo = "gray"
-            letra = "black"
+            letra = "white"
         } else if (tema == "crazy"){
             fondo = "pink"
-            letra = "black"
+            letra = "white"
     }
     body.style.backgroundColor = fondo
     body.style.color = letra
     }
 
     function enviarFormulario(){
-        var Nombre = document.getElemenById("Nombre").value
-        var Cedula = document.getElemenById("Cedula").value
-        if(Nombre && Cedula){
-            alert("Los datos del fomulario son: " + Nombre + "" + Cedula)
+        var Nombre = document.getElementById("Nombre").value
+        console.log(Nombre)
+        if(Nombre){
+            alert("Los datos del fomulario son:" + Nombre)
         }
         
    }
