@@ -17,13 +17,18 @@
         <br>
         <h1>¡Bienvenidos a Popsy!</h1>
     <div>
-        <img src="https://paseosanrafael.com/wp-content/uploads/2013/06/Popsy-01.jpg" alt="Logo popsy" width="400" 
+        <img src="https://paseosanrafael.com/wp-content/uploads/2013/06/Popsy-01.jpg" alt="Logo popsy" width="400" id="logo"
         style="border-radius: 100px;
         border-color: black;
         border-style: solid;
         margin-left: auto;
         margin-right: auto;
         display: block">
+        <select onchange="cambiarTamanoLogo(value)">
+        <option value="small">Pequeño</option>
+        <option value="medium">Mediano</option>
+        <option value="large">Grande</option>
+        </select>
         <h1>Popsy Helado Gourmet</h1>
         <p>Una marca orgullosamente colombiana, dedicada a la creación de momentos felices, que entrega inmejorables experiencias de helados, malteadas y postres. </p>
     </div>
@@ -204,7 +209,7 @@
         var letra = ""
         console.log(tema)
         if (tema == "light"){
-            fondo = "magenta"
+            fondo = "aqua"
             letra = "black"
         } else if (tema == "dark"){
             fondo = "gray"
@@ -218,13 +223,25 @@
     }
 
     function enviarFormulario(){
-        var Nombre = document.getElemenById("Nombre").value
-        var Cedula = document.getElemenById("Cedula").value
-        if(Nombre && Cedula){
-            alert("Los datos del fomulario son: " + Nombre + "" + Cedula)
+        var Nombre = document.getElementById("Nombre").value
+        if(Nombre){
+            alert("Los datos del fomulario son:" + Nombre)
         }
         
    }
+
+   function cambiarTamanoLogo(tamano){
+    var logo = document.getElementById("logo")
+    var tamanoLogo = 0
+    if(tamano == "small"){
+        tamanoLogo = 300
+    }else if(tamano == "medium"){
+        tamanoLogo = 600
+    }else if(tamano == "large"){
+        tamanoLogo = 900
+   }
+   logo.width = tamanoLogo
+}
 </script>
 
     <hr>
